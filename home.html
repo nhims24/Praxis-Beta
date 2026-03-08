@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Praxis</title>
+  <link rel="stylesheet" href="home.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<!--Nav Bar-->
+<nav>
+  <div class="nav-inner">
+    <div class="logo"><span>Praxis</span></div>
+
+    <ul class="nav-links">
+      <li><button onclick="showPage('home')" class="active" id="nav-home">Home</button></li>
+      <li><button onclick="showPage('about')" id="nav-about">About Us</button></li>
+      <li><button onclick="showPage('blog')" id="nav-blog">Blog</button></li>
+      <li><button onclick="showPage('services')" id="nav-services">Services</button></li>
+      <li><button onclick="showPage('faq')" id="nav-faq">FAQ</button></li>
+      <li><button class="nav-cta">Get Started</button></li>
+    </ul>
+
+    <button class="hamburger" onclick="toggleMenu(this)">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!--Homepage-->
+<div class="page active" id="page-home">
+
+  <!--First half of the page -->
+  <div class="hero">
+    <div>
+      <div class="hero-eyebrow animate-in">Welcome to Praxis</div>
+      <h1 class="animate-in"> Where Growth <em> Become Practics</em></h1>
+      <div class="hero-actions animate-in">
+        <button class="btn-primary" onclick="showPage('services')">See Our Services</button>
+        <button class="btn-secondary" onclick="showPage('about')">Learn More</button>
+      </div>
+    </div>
+    <div class="hero-visual animate-in"></div>
+  </div>
+
+  <hr class="divider" />
+
+  <!-- Random stats maybe??? -->
+  <div class="stats-strip">
+    <div class="stats-inner"> 
+      <div><div class="stat-num">500+</div><div class="stat-label">Happy clients</div></div>
+      <div><div class="stat-num">10yr</div><div class="stat-label">Experience</div></div>
+      <div><div class="stat-num">98%</div><div class="stat-label">Satisfaction rate</div></div>
+      <div><div class="stat-num">24/7</div><div class="stat-label">Support available</div></div>
+    </div>
+  </div>
+
+  <!-- Features -->
+  <div class="section">
+    <div class="section-label">Why us</div>
+    <h2 class="section-title">Everything you need,<br>in one place</h2>
+    
+
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon">⚡</div>
+        <h3>Fast & Reliable</h3>
+        <p>Describe your first key feature or benefit here. Focus on what the customer gets, not what you do.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🎨</div>
+        <h3>Beautifully Crafted</h3>
+        <p>Describe your second key feature or benefit here. Keep it short, specific, and customer-focused.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🔒</div>
+        <h3>Secure & Trusted</h3>
+        <p>Describe your third key feature or benefit here. What problem does this solve for your audience?</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">📈</div>
+        <h3>Built to Scale</h3>
+        <p>Your fourth feature here. Think about pain points your audience has and address them directly.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🤝</div>
+        <h3>Personal Support</h3>
+        <p>Your fifth feature here. People love knowing there's a human ready to help when they need it.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🌍</div>
+        <h3>Available Anywhere</h3>
+        <p>Your sixth feature here. Emphasize reach, accessibility, or flexibility — whatever applies to you.</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!--About Page-->
+<div class="page" id="page-about">
+
+  <div class="about-hero">
+    <div class="about-visual animate-in">👋</div>
+    <div class="about-text">
+      <div class="section-label animate-in">Our story</div>
+      <h2 class="animate-in">We're a team that cares about doing great work</h2>
+      <p class="animate-in">This is where you tell your story. Who are you, what do you believe in, and why did you start this? Be genuine — people connect with real stories more than polished corporate copy.</p>
+      <p class="animate-in">Add another paragraph here with more depth. Talk about your journey, your mission, or what drives your team every day. This is your chance to build trust.</p>
+      <button class="btn-primary animate-in" onclick="showPage('services')">See What We Offer →</button>
+    </div>
+  </div>
+
+  <hr class="divider" />
+
+  <div class="section">
+    <div class="section-label">What we stand for</div>
+    <h2 class="section-title">Our values</h2>
+    <p class="section-sub">These are the principles that guide every decision we make and every project we take on.</p>
+
+    <div class="values-grid">
+      <div class="value-card">
+        <h4>🌱 Value One</h4>
+        <p>Describe this core value and what it means in practice for your team and your clients. Keep it authentic.</p>
+      </div>
+      <div class="value-card">
+        <h4>💡 Value Two</h4>
+        <p>Describe this core value and what it means in practice for your team and your clients. Keep it authentic.</p>
+      </div>
+      <div class="value-card">
+        <h4>🤲 Value Three</h4>
+        <p>Describe this core value and what it means in practice for your team and your clients. Keep it authentic.</p>
+      </div>
+      <div class="value-card">
+        <h4>🔥 Value Four</h4>
+        <p>Describe this core value and what it means in practice for your team and your clients. Keep it authentic.</p>
+      </div>
+    </div>
+  </div>
+
+  <hr class="divider" />
+
+  <div class="section">
+    <div class="section-label">The people</div>
+    <h2 class="section-title">Meet the team</h2>
+    <p class="section-sub">Real humans who are passionate about what they do. Add or remove cards to match your team size.</p>
+
+    <div class="team-grid">
+      <div class="team-card">
+        <div class="team-avatar">👤</div>
+        <div class="team-name">Your Name</div>
+        <div class="team-role">Founder & CEO</div>
+        <div class="team-bio">A short sentence or two about this person — their background, what they bring to the team.</div>
+      </div>
+      <div class="team-card">
+        <div class="team-avatar">👤</div>
+        <div class="team-name">Team Member</div>
+        <div class="team-role">Head of Design</div>
+        <div class="team-bio">A short sentence or two about this person — their background, what they bring to the team.</div>
+      </div>
+      <div class="team-card">
+        <div class="team-avatar">👤</div>
+        <div class="team-name">Team Member</div>
+        <div class="team-role">Lead Developer</div>
+        <div class="team-bio">A short sentence or two about this person — their background, what they bring to the team.</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!--Blog section -->
+<div class="page" id="page-blog">
+  <div class="section">
+    <div class="section-label animate-in">From the blog</div>
+    <h2 class="section-title animate-in">Latest articles</h2>
+    <p class="section-sub animate-in">Thoughts, guides, and updates from our team. Replace these with your real posts.</p>
+
+    <div class="blog-grid">
+      <div class="blog-card">
+        <div class="blog-thumb g1">✍️</div>
+        <div class="blog-content">
+          <div class="blog-tag">Category</div>
+          <div class="blog-title">Your first blog post title goes right here</div>
+          <div class="blog-excerpt">A short excerpt that gives the reader a preview of what they'll learn. Make it enticing — one or two sentences.</div>
+          <div class="blog-meta">
+            <span>Jan 12, 2026</span>
+            <a href="#" class="read-more">Read more →</a>
+          </div>
+        </div>
+      </div>
+      <div class="blog-card">
+        <div class="blog-thumb g2">💡</div>
+        <div class="blog-content">
+          <div class="blog-tag">Tips</div>
+          <div class="blog-title">A second article with a compelling headline</div>
+          <div class="blog-excerpt">Draw the reader in with a short, punchy preview. What will they take away from this post?</div>
+          <div class="blog-meta">
+            <span>Jan 5, 2026</span>
+            <a href="#" class="read-more">Read more →</a>
+          </div>
+        </div>
+      </div>
+      <div class="blog-card">
+        <div class="blog-thumb g3">🚀</div>
+        <div class="blog-content">
+          <div class="blog-tag">News</div>
+          <div class="blog-title">Third post — keep headlines under 10 words</div>
+          <div class="blog-excerpt">Short excerpts work best. Give just enough info to spark curiosity and earn the click.</div>
+          <div class="blog-meta">
+            <span>Dec 28, 2025</span>
+            <a href="#" class="read-more">Read more →</a>
+          </div>
+        </div>
+      </div>
+      <div class="blog-card">
+        <div class="blog-thumb g4">🎯</div>
+        <div class="blog-content">
+          <div class="blog-tag">Guide</div>
+          <div class="blog-title">A fourth article you can customize freely</div>
+          <div class="blog-excerpt">Add as many blog cards as you need. Duplicate the HTML block above and change the content.</div>
+          <div class="blog-meta">
+            <span>Dec 15, 2025</span>
+            <a href="#" class="read-more">Read more →</a>
+          </div>
+        </div>
+      </div>
+      <div class="blog-card">
+        <div class="blog-thumb g5">📖</div>
+        <div class="blog-content">
+          <div class="blog-tag">Story</div>
+          <div class="blog-title">Fifth post — share something valuable here</div>
+          <div class="blog-excerpt">The best blog content teaches something, tells a story, or solves a real problem your audience has.</div>
+          <div class="blog-meta">
+            <span>Nov 30, 2025</span>
+            <a href="#" class="read-more">Read more →</a>
+          </div>
+        </div>
+      </div>
+      <div class="blog-card">
+        <div class="blog-thumb g6">🌐</div>
+        <div class="blog-content">
+          <div class="blog-tag">Insights</div>
+          <div class="blog-title">Sixth post to round out the grid nicely</div>
+          <div class="blog-excerpt">Six cards fill the grid perfectly in three columns. Add more below if your blog grows.</div>
+          <div class="blog-meta">
+            <span>Nov 18, 2025</span>
+            <a href="#" class="read-more">Read more →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Services -->
+<div class="page" id="page-services">
+  <div class="section">
+    <div class="section-label animate-in">What we do</div>
+    <h2 class="section-title animate-in">Our services</h2>
+    <p class="section-sub animate-in">Add, remove, or rename these service cards to match what you actually offer.</p>
+
+    <div class="services-grid" style="margin-bottom: 70px;">
+      <div class="service-card">
+        <div class="service-icon">🎨</div>
+        <div class="service-info">
+          <h3>Service One</h3>
+          <p>Describe this service clearly. What do you do, who is it for, and what result does the client get? One to three sentences works well here.</p>
+          <a href="#" class="service-link">Learn more →</a>
+        </div>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">💻</div>
+        <div class="service-info">
+          <h3>Service Two</h3>
+          <p>Describe this service clearly. What do you do, who is it for, and what result does the client get? One to three sentences works well here.</p>
+          <a href="#" class="service-link">Learn more →</a>
+        </div>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">📊</div>
+        <div class="service-info">
+          <h3>Service Three</h3>
+          <p>Describe this service clearly. What do you do, who is it for, and what result does the client get? One to three sentences works well here.</p>
+          <a href="#" class="service-link">Learn more →</a>
+        </div>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🔧</div>
+        <div class="service-info">
+          <h3>Service Four</h3>
+          <p>Describe this service clearly. What do you do, who is it for, and what result does the client get? One to three sentences works well here.</p>
+          <a href="#" class="service-link">Learn more →</a>
+        </div>
+      </div>
+    </div>
+
+    <hr class="divider" style="margin-bottom: 60px;" />
+
+    <div class="section-label">Pricing</div>
+    <h2 class="section-title">Simple, honest pricing</h2>
+    <p class="section-sub">No hidden fees. Pick the plan that fits. Update the prices and features to match your offerings.</p>
+
+    <div class="pricing-grid">
+      <div class="pricing-card">
+        <div class="plan-name">Starter</div>
+        <div class="plan-price">$0</div>
+        <div class="plan-period">per month</div>
+        <ul class="plan-features">
+          <li class="plan-feature">Feature one</li>
+          <li class="plan-feature">Feature two</li>
+          <li class="plan-feature">Feature three</li>
+          <li class="plan-feature">Email support</li>
+        </ul>
+        <button class="plan-btn plan-btn-outline">Get started free</button>
+      </div>
+      <div class="pricing-card featured">
+        <div class="plan-name">Pro</div>
+        <div class="plan-price">$49</div>
+        <div class="plan-period">per month</div>
+        <ul class="plan-features">
+          <li class="plan-feature">Everything in Starter</li>
+          <li class="plan-feature">Feature four</li>
+          <li class="plan-feature">Feature five</li>
+          <li class="plan-feature">Priority support</li>
+        </ul>
+        <button class="plan-btn plan-btn-white">Start Pro plan</button>
+      </div>
+      <div class="pricing-card">
+        <div class="plan-name">Enterprise</div>
+        <div class="plan-price">Custom</div>
+        <div class="plan-period">contact us</div>
+        <ul class="plan-features">
+          <li class="plan-feature">Everything in Pro</li>
+          <li class="plan-feature">Custom integrations</li>
+          <li class="plan-feature">Dedicated manager</li>
+          <li class="plan-feature">SLA guarantee</li>
+        </ul>
+        <button class="plan-btn plan-btn-outline">Talk to sales</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--FAQ -->
+<div class="page" id="page-faq">
+  <div class="section">
+    <div class="section-label animate-in">Got questions?</div>
+    <h2 class="section-title animate-in">Frequently asked questions</h2>
+    <p class="section-sub animate-in">Add your own questions and answers below. These should address the most common things your audience wants to know.</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          What is your most frequently asked question?
+          <span class="faq-arrow">▼</span>
+        </button>
+        <div class="faq-a">Write a clear, helpful answer here. Avoid jargon — answer the way you'd explain it to a friend. You can add as much detail as needed, but try to keep answers concise and scannable.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          How does your process work from start to finish?
+          <span class="faq-arrow">▼</span>
+        </button>
+        <div class="faq-a">Explain your process step by step here. People want to know what to expect before they commit. A clear process description builds confidence and reduces friction.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          What is your pricing and are there any hidden fees?
+          <span class="faq-arrow">▼</span>
+        </button>
+        <div class="faq-a">Be transparent about pricing here. If you have multiple plans, reference the Services page. Mention what's included, what's not, and any common add-ons people ask about.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          How long does it typically take to see results?
+          <span class="faq-arrow">▼</span>
+        </button>
+        <div class="faq-a">Set realistic expectations here. Be honest about timelines — over-promising leads to disappointed clients. If it varies, explain what factors affect the timeline.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          Do you offer refunds or a satisfaction guarantee?
+          <span class="faq-arrow">▼</span>
+        </button>
+        <div class="faq-a">Clearly state your policy here. A clear, fair refund policy removes a major barrier to purchase. If you offer a guarantee, spell out exactly what it covers.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          How can I get in touch with your team?
+          <span class="faq-arrow">▼</span>
+        </button>
+        <div class="faq-a">List your contact options here — email, phone, chat, etc. Include expected response times so people know what to expect. You can also link to a contact form if you have one.</div>
+      </div>
+    </div>
+
+    <!-- Contact strip -->
+    <div class="contact-strip">
+      <div>
+        <h3>Still have questions?</h3>
+        <p>We're happy to help — just send us a message and we'll get back to you quickly.</p>
+      </div>
+      <a href="mailto:hello@yourdomain.com" class="contact-email">📧 hello@yourdomain.com</a>
+    </div>
+
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════
+     FOOTER
+════════════════════════════════════════ -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="logo">Your<span>Brand</span></div>
+      <p>A short tagline or description of your business goes here — one or two lines is plenty.</p>
+    </div>
+    <div class="footer-col">
+      <h5>Pages</h5>
+      <ul>
+        <li><button onclick="showPage('home')">Home</button></li>
+        <li><button onclick="showPage('about')">About Us</button></li>
+        <li><button onclick="showPage('blog')">Blog</button></li>
+        <li><button onclick="showPage('services')">Services</button></li>
+        <li><button onclick="showPage('faq')">FAQ</button></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Connect</h5>
+      <ul>
+        <li><button>Twitter / X</button></li>
+        <li><button>Instagram</button></li>
+        <li><button>LinkedIn</button></li>
+        <li><button>YouTube</button></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Legal</h5>
+      <ul>
+        <li><button>Privacy Policy</button></li>
+        <li><button>Terms of Use</button></li>
+        <li><button>Cookie Policy</button></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 YourBrand. All rights reserved.</span>
+    <span>Made with care ♥</span>
+  </div>
+</footer>
+
+<script>
+  /* ── Page switching ── */
+  function showPage(id) {
+    document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+    document.querySelectorAll('.nav-links button').forEach(b => b.classList.remove('active'));
+
+    document.getElementById('page-' + id).classList.add('active');
+    const navBtn = document.getElementById('nav-' + id);
+    if (navBtn) navBtn.classList.add('active');
+
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  /* ── FAQ accordion ── */
+  function toggleFaq(btn) {
+    const item = btn.closest('.faq-item');
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+    if (!isOpen) item.classList.add('open');
+  }
+
+  /* ── Mobile menu (placeholder) ── */
+  function toggleMenu(btn) {
+    // On mobile, toggle a simple nav dropdown
+    let menu = document.getElementById('mobile-menu');
+    if (!menu) {
+      menu = document.createElement('div');
+      menu.id = 'mobile-menu';
+      menu.style.cssText = 'position:fixed;top:68px;left:0;right:0;background:#fff;border-bottom:1px solid #e8e8e4;padding:12px 20px;z-index:99;display:flex;flex-direction:column;gap:4px;';
+      ['home','about','blog','services','faq'].forEach(p => {
+        const b = document.createElement('button');
+        b.textContent = p.charAt(0).toUpperCase() + p.slice(1).replace('-',' ');
+        b.style.cssText = 'text-align:left;padding:12px 16px;border-radius:8px;font-family:inherit;font-size:.9rem;color:#1a1a1a;cursor:pointer;border:none;background:none;';
+        b.onmouseenter = () => b.style.background = '#e8f2ed';
+        b.onmouseleave = () => b.style.background = 'none';
+        b.onclick = () => { showPage(p); menu.remove(); };
+        menu.appendChild(b);
+      });
+      document.body.appendChild(menu);
+    } else {
+      menu.remove();
+    }
+  }
+</script>
+</body>
+</html>
