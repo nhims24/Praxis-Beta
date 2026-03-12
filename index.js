@@ -40,3 +40,7 @@
       menu.remove();
     }
   }
+
+function showLink(url){
+  window.open(url, "_blank");
+}
