@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Praxis</title>
+  <link rel="stylesheet" href="about.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Outfit:wght@300;400;500;600&family=Bebas+Neue&display=swap" rel="stylesheet" />
+ 
+</head>
+<body>
+
+<!-- ══ NAV ══ -->
+<nav>
+  <div class="nav-inner">
+    <div class="logo">Praxis</div>
+    <button class="nav-close" onclick="toggleClose(this)" aria-label="Close">✕</button>
+    <button class="hamburger" onclick="toggleMenu(this)">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ══ HOME PAGE ══ -->
+<div class="page active" id="page-home">
+
+  <div class="split-hero">
+    <!-- LEFT: nav buttons -->
+    <div class="split-left">
+      <button class="split-nav-btn animate-in" onclick="showPage('about')"><span>ABOUT US/</span></button>
+      <button class="split-nav-btn animate-in" onclick="showPage('blog')"><span>LEARNING HUB/</span></button>
+      <button class="split-nav-btn animate-in" onclick="showPage('services')"><span>CIRCLING MENTORSHIP PROGRAM/</span></button>
+      <button class="split-nav-btn animate-in" onclick="showPage('faq')"><span>OUR COMMUNITY/</span></button>
+    </div>
+
+    <!-- RIGHT: image + overlay -->
+    <div class="split-right">
+      <div class="hero-visual"></div>
+    </div>
+  </div>
+
+  <hr class="divider" />
+
+  <!-- Features -->
+
+</div><!-- /page-home -->
+
+<!-- ══ ABOUT PAGE ══ -->
+<div class="page" id="page-about">
+  <div class="about-hero">
+    <div class="about-text animate-in">
+      <div class="section-label">About Praxis</div>
+      <h2>We believe growth is a practice, not a destination.</h2>
+      <p>Praxis was built on a simple idea: real transformation happens through consistent, intentional action — not bursts of motivation. We created a structured system that makes discipline accessible.</p>
+      <p>Our team of coaches, mentors, and community builders work together to create an environment where growth is expected, celebrated, and sustained.</p>
+    </div>
+    <div class="about-visual animate-in">🌱</div>
+  </div>
+  <hr class="divider" />
+  <div class="section">
+    <div class="section-label">Our Values</div>
+    <h2 class="section-title">Principles We Live By</h2>
+    <div class="values-grid">
+      <div class="value-card animate-in"><h4>Consistency Over Intensity</h4><p>Small, repeated actions compound into extraordinary results over time.</p></div>
+      <div class="value-card animate-in"><h4>Radical Accountability</h4><p>We own our choices, our progress, and our setbacks — fully.</p></div>
+      <div class="value-card animate-in"><h4>Community as Foundation</h4><p>Growth accelerates when we're surrounded by people invested in our success.</p></div>
+      <div class="value-card animate-in"><h4>Practice as Identity</h4><p>We don't just do growth work. We become people who practice growth daily.</p></div>
+    </div>
+  </div>
+  <hr class="divider" />
+</div><!-- /page-about -->
+
+<!-- ══ BLOG / LEARNING HUB PAGE ══ -->
+<div class="page" id="page-blog">
+  <div class="section">
+    <div class="section-label">Learning Hub</div>
+    <h2 class="section-title">Ideas Worth Practicing</h2>
+    <p class="section-sub">Frameworks, stories, and insights to fuel your growth journey.</p>
+    <div class="blog-grid">
+      <div class="blog-card animate-in">
+        <div class="blog-thumb g1"></div>
+        <div class="blog-content">
+          <div class="blog-tag">Mentorship</div>
+          <div class="blog-title">Why Every High Performer Has a Mentor</div>
+          <div class="blog-excerpt">The science and stories behind guided growth.</div>
+          <div class="blog-meta"><span>Apr 2026</span><span class="read-more">Read →</span></div>
+        </div>
+      </div>
+      <div class="blog-card animate-in">
+        <div class="blog-thumb g2"></div>
+        <div class="blog-content">
+          <div class="blog-tag">Skills</div>
+          <div class="blog-title">Building a Skillset That Compounds</div>
+          <div class="blog-excerpt">How to choose the right skills at the right time.</div>
+          <div class="blog-meta"><span>Mar 2026</span><span class="read-more">Read →</span></div>
+        </div>
+      </div>
+      <div class="blog-card animate-in">
+        <div class="blog-thumb g3"></div>
+        <div class="blog-content">
+          <div class="blog-tag">Habits</div>
+          <div class="blog-title">The 1% Rule: Small Shifts, Big Gains</div>
+          <div class="blog-excerpt">Marginal gains and the arithmetic of improvement.</div>
+          <div class="blog-meta"><span>Feb 2026</span><span class="read-more">Read →</span></div>
+        </div>
+      </div>
+      <div class="blog-card animate-in">
+        <div class="blog-thumb g4"></div>
+        <div class="blog-content">
+          <div class="blog-tag">Community</div>
+          <div class="blog-title">The Hidden Power of Accountability Circles</div>
+          <div class="blog-excerpt">Why who you grow with matters as much as how.</div>
+          <div class="blog-meta"><span>Jan 2026</span><span class="read-more">Read →</span></div>
+        </div>
+      </div>
+      <div class="blog-card animate-in">
+        <div class="blog-thumb g5"></div>
+        <div class="blog-content">
+          <div class="blog-tag">Mindset</div>
+          <div class="blog-title">From Fixed to Fluid: Rewiring How You Learn</div>
+          <div class="blog-excerpt">Practical ways to cultivate a growth mindset daily.</div>
+          <div class="blog-meta"><span>Dec 2025</span><span class="read-more">Read →</span></div>
+        </div>
+      </div>
+      <div class="blog-card animate-in">
+        <div class="blog-thumb g6"></div>
+        <div class="blog-content">
+          <div class="blog-tag">Practice</div>
+          <div class="blog-title">What Does Praxis Actually Mean?</div>
+          <div class="blog-excerpt">The philosophy behind turning theory into lived action.</div>
+          <div class="blog-meta"><span>Nov 2025</span><span class="read-more">Read →</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div><!-- /page-blog -->
+
+<!-- ══ SERVICES PAGE ══ -->
+<div class="page" id="page-services">
+  <div class="section">
+    <div class="section-label">Services</div>
+    <h2 class="section-title">Programs Designed for Real Growth</h2>
+    <p class="section-sub">Every offering is built around practice — not passive consumption.</p>
+    <div class="services-grid">
+      <div class="service-card animate-in">
+        <div class="service-icon">🧭</div>
+        <div class="service-info"><h3>1-on-1 Mentorship</h3><p>Personalised sessions with a dedicated mentor who knows your goals, challenges, and growth edge.</p><span class="service-link">Learn more →</span></div>
+      </div>
+      <div class="service-card animate-in">
+        <div class="service-icon">🔄</div>
+        <div class="service-info"><h3>Circling Mentorship Program</h3><p>Small-group cohorts that combine peer accountability with expert facilitation for deep, sustained growth.</p><span class="service-link">Learn more →</span></div>
+      </div>
+      <div class="service-card animate-in">
+        <div class="service-icon">📖</div>
+        <div class="service-info"><h3>Learning Hub Access</h3><p>Curated frameworks, exercises, workshops, and resources updated every month.</p><span class="service-link">Learn more →</span></div>
+      </div>
+      <div class="service-card animate-in">
+        <div class="service-icon">🌐</div>
+        <div class="service-info"><h3>Community Membership</h3><p>Join a thriving community of growth-focused individuals doing the work alongside you.</p><span class="service-link">Learn more →</span></div>
+      </div>
+    </div>
+  </div>
+  <hr class="divider" />
+  <div class="section">
+    <div class="section-label">Pricing</div>
+    <h2 class="section-title">Simple, Transparent Plans</h2>
+    <div class="pricing-grid">
+      <div class="pricing-card animate-in">
+        <div class="plan-name">Starter</div>
+        <div class="plan-price">Free</div>
+        <div class="plan-period">Forever</div>
+        <ul class="plan-features">
+          <li class="plan-feature">Community access</li>
+          <li class="plan-feature">Learning Hub (basic)</li>
+          <li class="plan-feature">Monthly group call</li>
+        </ul>
+        <button class="plan-btn plan-btn-outline">Get Started</button>
+      </div>
+      <div class="pricing-card featured animate-in">
+        <div class="plan-name">Growth</div>
+        <div class="plan-price">$49</div>
+        <div class="plan-period">per month</div>
+        <ul class="plan-features">
+          <li class="plan-feature">Everything in Starter</li>
+          <li class="plan-feature">Full Learning Hub</li>
+          <li class="plan-feature">Circling Program access</li>
+          <li class="plan-feature">Weekly group sessions</li>
+        </ul>
+        <button class="plan-btn plan-btn-white">Join Growth</button>
+      </div>
+      <div class="pricing-card animate-in">
+        <div class="plan-name">Elite</div>
+        <div class="plan-price">$149</div>
+        <div class="plan-period">per month</div>
+        <ul class="plan-features">
+          <li class="plan-feature">Everything in Growth</li>
+          <li class="plan-feature">1-on-1 mentorship (2×/mo)</li>
+          <li class="plan-feature">Priority support</li>
+          <li class="plan-feature">Custom growth plan</li>
+        </ul>
+        <button class="plan-btn plan-btn-outline">Go Elite</button>
+      </div>
+    </div>
+  </div>
+</div><!-- /page-services -->
+
+<!-- ══ FAQ / COMMUNITY PAGE ══ -->
+<div class="page" id="page-faq">
+  <div class="section">
+    <div class="section-label">Community / FAQ</div>
+    <h2 class="section-title">Questions, Answered</h2>
+    <p class="section-sub">Everything you need to know before taking the first step.</p>
+    <div class="faq-list">
+      <div class="faq-item animate-in">
+        <button class="faq-q" onclick="toggleFaq(this)">What is Praxis? <span class="faq-arrow">▼</span></button>
+        <div class="faq-a">Praxis is a structured personal-growth platform combining mentorship, community, and curated learning — built for people serious about turning intention into consistent action.</div>
+      </div>
+      <div class="faq-item animate-in">
+        <button class="faq-q" onclick="toggleFaq(this)">Who is this for? <span class="faq-arrow">▼</span></button>
+        <div class="faq-a">Anyone committed to deliberate self-development — whether you're a student, professional, entrepreneur, or simply someone who wants to grow with structure and community support.</div>
+      </div>
+      <div class="faq-item animate-in">
+        <button class="faq-q" onclick="toggleFaq(this)">What is the Circling Mentorship Program? <span class="faq-arrow">▼</span></button>
+        <div class="faq-a">A small-group cohort programme where 4–8 members work together with a trained facilitator over a defined period. You share goals, hold each other accountable, and grow together in real time.</div>
+      </div>
+      <div class="faq-item animate-in">
+        <button class="faq-q" onclick="toggleFaq(this)">Can I cancel my plan anytime? <span class="faq-arrow">▼</span></button>
+        <div class="faq-a">Yes. All paid plans are month-to-month with no lock-in. You can upgrade, downgrade, or cancel at any time from your account dashboard.</div>
+      </div>
+      <div class="faq-item animate-in">
+        <button class="faq-q" onclick="toggleFaq(this)">Is there a free option? <span class="faq-arrow">▼</span></button>
+        <div class="faq-a">Absolutely — the Starter tier is free forever and includes community access, basic Learning Hub content, and a monthly group call.</div>
+      </div>
+    </div>
+    <div class="contact-strip animate-in">
+      <div>
+        <h3>Still have questions?</h3>
+        <p>We're happy to help — someone from the team will get back to you within 24 hours.</p>
+      </div>
+      <button class="contact-email" onclick="showLink('https://www.facebook.com/profile.php?id=61588609199906&sk=about')">Contact Us</button>
+    </div>
+  </div>
+</div><!-- /page-faq -->
+
+<!-- ══ FOOTER ══ -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="logo">Your<span>Praxis</span></div>
+      <p>Where Growth Becomes Practice. A structured system for disciplined development.</p>
+    </div>
+    <div class="footer-col">
+      <h5>Pages</h5>
+      <ul>
+        <li><button onclick="showPage('home')">Home</button></li>
+        <li><button onclick="showPage('about')">About Us</button></li>
+        <li><button onclick="showPage('blog')">Learning Hub</button></li>
+        <li><button onclick="showPage('services')">Services</button></li>
+        <li><button onclick="showPage('faq')">Community / FAQ</button></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Connect</h5>
+      <ul>
+        <li><button>Instagram</button></li>
+        <li><button onclick="showLink('https://www.facebook.com/profile.php?id=61588609199906&sk=about')">Facebook</button></li>
+        <li><button>YouTube</button></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Legal</h5>
+      <ul>
+        <li><button>Privacy Policy</button></li>
+        <li><button>Terms of Use</button></li>
+        <li><button>Cookie Policy</button></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 ThePraxis. All rights reserved.</span>
+    <span>Made with care ♥</span>
+  </div>
+</footer>
+<script src="about.js"></script>
+</body>
+</html>

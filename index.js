@@ -1,14 +1,4 @@
   /* ── Page switching ── */
-  function showPage(id) {
-    document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
-    document.querySelectorAll('.nav-links button').forEach(b => b.classList.remove('active'));
-
-    document.getElementById('page-' + id).classList.add('active');
-    const navBtn = document.getElementById('nav-' + id);
-    if (navBtn) navBtn.classList.add('active');
-
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  }
 
   /* ── FAQ accordion ── */
   function toggleFaq(btn) {

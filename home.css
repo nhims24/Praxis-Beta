@@ -1,11 +1,11 @@
 :root {
-    --bg: url("background.jpg");
+    --bg: #004038;
     --white: #ffffff;
     --text: #FFF;
     --text-muted: #FBF7EA;
-    --accent: #2a5c45;
+    --accent: #046243;
     --accent-light: #e8f2ed;
-    --border: #CEF17B;
+    --border: #004038;
     --radius: 12px;
     --font-display: 'Playfair Display', Georgia, serif;
     --font-body: 'Outfit', sans-serif;
@@ -15,7 +15,7 @@
   html { scroll-behavior: smooth; }
 
   body {
-    background: var(--bg);
+    background: var(--accent);
     color: var(--text);
     font-family: var(--font-body);
     font-weight: 400;
@@ -38,7 +38,7 @@
     position: sticky;
     top: 0;
     z-index: 100;
-    background: rgba(250,250,248,.92);
+    background: var(--bg);
     backdrop-filter: blur(14px);
     border-bottom: 1px solid var(--border);
   }
@@ -56,11 +56,11 @@
   .logo {
     font-family: var(--font-display);
     font-weight: 700;
-    font-size: 1.35rem;
+    font-size: 3rem;
     color: var(--text);
     letter-spacing: -0.02em;
   }
-  .logo span { color: var(--accent); }
+  .logo span { color: var(--text-muted); }
 
   .nav-links {
     display: flex;
@@ -69,17 +69,17 @@
     list-style: none;
   }
 
-  .nav-links li button {
+  .nav-links li a {
     font-family: var(--font-body);
     font-size: 0.88rem;
     font-weight: 500;
-    color: #2a5c45;
+    color: var(--text-muted);
     padding: 7px 16px;
     border-radius: 8px;
     transition: all .18s;
   }
   .nav-links li button:hover { color: var(--text); background: var(--border); }
-  .nav-links li button.active { color: var(--accent); background: var(--accent-light); }
+  .nav-links li button.active { color: var(--text); background: var(--accent-light); }
 
   .nav-cta {
     background: var(--accent) !important;
@@ -207,8 +207,8 @@
   .hero-actions { display: flex; gap: 12px; flex-wrap: wrap; }
 
   .btn-primary {
-    background: var(--accent);
-    color: #fff;
+    background: #CEF17B;
+    color: var(--accent);
     border-radius: 10px;
     padding: 13px 28px;
     font-size: 0.9rem;
@@ -218,8 +218,8 @@
   .btn-primary:hover { opacity: .88; transform: translateY(-1px); }
 
   .btn-secondary {
-    background: transparent;
-    color: var(--text);
+    background: #CEF17B;
+    color: var(--accent);
     border: 1px solid var(--border);
     border-radius: 10px;
     padding: 13px 28px;
